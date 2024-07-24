@@ -241,7 +241,7 @@ main #new .right_t .right .detail li .c_btn {
     font-weight:700; padding:0 5px;
     text-align: center; 
     align-items:center;
-    color: white; font-size: 14px;}
+    color: white; font-size: 0.875rem;}
 main #new .right_t .right .detail li .c_btn:nth-child(1){background: #2A2C36;}
 main #new .right_t .right .detail li .c_btn:nth-child(2){background: #18236C;}
 main #new .right_t .right .detail li .c_btn:nth-child(3){background: #BE3038;}
@@ -410,7 +410,7 @@ main #best .big .right_t .right li .c_btn {
     text-align: center;
     align-items: center;
     color: white;
-    font-size: 14px;
+    font-size:0.875rem;
 }
 main #best .big .right_t .right li .c_btn:nth-child(1) {
     background:#BE3038;
@@ -519,7 +519,7 @@ main #set .right_t .right .detail li .c_btn {
     text-align: center;
     align-items: center;
     color: white;
-    font-size: 14px;
+    font-size:0.875rem;
 }
 main #set .right_t .right .detail li .c_btn:nth-child(1) {
     background:#BE3038;
@@ -535,3 +535,131 @@ main #set .right_t .right .detail li .disc {
     font-size: 12px;
     font-weight: 400;
     text-decoration: line-through;}
+
+/*05_hottime*/
+main #hottime{
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+}
+main #hottime h1{
+    font-family: "Noto Serif";
+    font-size: 2.25rem;
+    display: flex;
+    margin: 0 200px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+main #hottime h1 p{
+    padding: 0 10px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+main #hottime .hot{
+    background-color: #EBEAEA;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 200px;
+    justify-content: space-between;
+}
+main #hottime .right{}
+main #hottime .hot .detail {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    padding: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+main #hottime .hot .detail li {
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    gap:10px; 
+}
+main #hottime .hot .detail li .per {
+    color: #BE3038;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+main #hottime .hot .detail li .per span {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+main #hottime .hot .detail li .disc {
+    color: #AAAAAA;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: line-through;}
+
+main #hottime .hot .detail li .c_btn {
+    display: flex;
+    height: 17px;
+    justify-content: flex-start;
+    font-weight: 700;
+    padding: 0 5px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size:0.875rem;
+}
+main #hottime .hot .detail li .c_btn:nth-child(1) {
+    background:#BE3038;
+}
+main #hottime .hot .detail li .c_btn:nth-child(2) {
+    background: #FF3D00;
+}
+main #hottime .hot .detail li .c_btn:nth-child(3) {
+    background: #18236C;
+}
+
+/*06_review*/
+main #review{
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+}
+main #review h1{
+    font-family: "Noto Serif";
+    font-size: 2.25rem;
+    display: flex;
+    margin: 0 200px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*07_sns*/
+main #sns{
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+}
+main #sns h1{
+    font-family: "Noto Serif";
+    font-size: 2.25rem;
+    display: flex;
+    margin: 0 200px 30px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap:6px;
+}
+main #sns h1 p{
+    font-family: "Noto Serif";
+    padding: 0 10px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+main #sns .insta
+{display: flex;
+    justify-content: space-around;
+    margin: 0 200px;
+    flex-wrap: nowrap;
+}
