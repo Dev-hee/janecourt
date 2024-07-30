@@ -639,20 +639,112 @@ main #hottime .hot .detail li .c_btn:nth-child(3) {
 
 /*06_review*/
 main #review{
+    width: 1440px;
+    margin:200px auto;
     display: flex;
-    margin-top: 200px;
     flex-direction: column;
 }
 main #review h1{
-    font-family: "Noto Serif";
+    width: 1440px;
+    margin: 0 auto 30px;
+    font-family:"Noto Serif";
     font-size: 2.25rem;
     display: flex;
-    width:1440px;
-    margin: 0 auto 30px;
+    justify-content: space-between;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
 }
+
+main #review .container{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+main #review .container .item{
+    width: 100%;
+    font-size: 0.875rem;
+    color: #333333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+main #review .container .item img{
+    width: 100%;
+}
+
+main #review .container .item .prod-wrap{
+        background-color: #F5F5F5;
+        border: 1px #EBEAEA solid;
+}
+main #review .container .item .prod-wrap .small{
+    display: flex;
+    padding: 10px;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+main #review .container .item .prod-wrap .small img{
+    width: 62px;
+    height: 93px;
+
+    }
+
+main #review .container .item .prod-wrap .small span{
+    text-align: right;
+    background: #F5F5F5;
+    font-weight: 700;
+    padding: 16px 0;
+}
+
+main #review .container .item .option{
+    background-color: #F5F5F5;
+    border: 1px #EBEAEA solid;
+
+}
+
+main #review .container .item .option .cont_txt{
+    font-weight: 700;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #review .container .item .option .cont_txt span{
+}
+
+main #review .container .item .star_ratings{
+    padding: 20px 16px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px #EBEAEA solid;
+}
+
+
+main #review .container .item .star_ratings .star{
+    display: flex;
+    justify-content: space-between;
+}
+
+main #review .container .item .star_ratings .star span{}
+
+
+main #review .container .item .star_ratings span{}
+
+
+main #review .container .item .txt{
+    border: 1px #EBEAEA solid;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 
 /*07_sns*/
 main #sns{
