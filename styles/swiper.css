@@ -12,5 +12,5 @@ main .snsswiper .swiper-slide img {
   height: 100%;
 }
 main #sns .swiper-scrollbar {
-  transform:translateY(60px)
+  transform:translateY(60px);
 }
