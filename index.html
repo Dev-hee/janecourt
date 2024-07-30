@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>janecourt</title>
     <link rel="shortcut icon" href="./images/pavi.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -17,25 +14,31 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/swiper.js" defer></script>
+    <!-- link -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/swiper.css">
 </head>
 <body>
     <!--header-->
     <header>
         <div class="top"><h1>신 규 회 원 혜 택</h1><p><span> | </span>쇼핑지원금 2천원 + 배송비 무료</p></div>
         <nav>
-            <h1><a href="#"><img src="./images/main_logo.svg" alt="logo"></a></h1>
-            <div class="gnb">
-                <ul>
-                    <li><a href="#">BENEFIT</a></li>
-                    <li><a href="#">NEW</a></li>
-                    <li><a href="#">BEST</a></li>
-                    <li><a href="#">SET</a></li>
-                    <li><a href="#">1&1</a></li>
-                    <li><a href="#">상의</a></li>
-                    <li><a href="#">하의</a></li>
-                    <li><a href="#">악세사리</a></li>
-                </ul>
-            </div>
+           <div class="left">
+              <h1><a href="#"><img src="./images/main_logo.svg" alt="logo"></a></h1>
+              <div class="gnb">
+                  <ul>
+                      <li><a href="#">BENEFIT</a></li>
+                      <li><a href="#">NEW</a></li>
+                      <li><a href="#">BEST</a></li>
+                      <li><a href="#">SET</a></li>
+                      <li><a href="#">1&1</a></li>
+                      <li><a href="#">상의</a></li>
+                      <li><a href="#">하의</a></li>
+                      <li><a href="#">악세사리</a></li>
+                  </ul>
+              </div>
+           </div>
             <div class="snb">
                 <ul>
                     <li><a href="#">REVIEW</a></li>
@@ -51,7 +54,7 @@
     </header>
     <!--item-->
     <main>
-      <div class="swiper-container">
+      <div class="swiper maintop">
         <div class="swiper-wrapper">
             <div class="swiper-slide slide1"><a href="#"><img src="./images/gnb_01.jpg" alt=""></a></div>
             <div class="swiper-slide slide2"><a href="#"><img src="./images/gnb_02.jpg" alt=""></a></div>
@@ -214,41 +217,43 @@
     <div id="pick">
       <h1>MD’S PICK</h1>
         <div class="pick_l">
-          <div class="right">
-            <img src="images/pick01.png" alt="">
-              <ul class="detail">
-                <li>
-                  <p class="c_btn">HOT</p>
-                </li>
-                <li>
-                  안입은듯한 누디시리즈.<br>가볍고, 편안하게.
-                </li>
-              </ul>
-          </div>
-          <div class="pick_r">
+          <div class="container">
             <div class="right">
-              <img src="images/pick03.png" alt="">
-                      <ul class="detail">
-                        <li>누디라인 브라탑</li>
-                        <li>
-                          <p class="per">42%<span> 45,000원</span></p>
-                          <p class="disc">78,000원</p>
-                        </li>
-                      </ul>
-                  </ul>
+              <img src="images/pick01.png" alt="">
+                <ul class="detail">
+                  <li>
+                    <p class="c_btn">HOT</p>
+                  </li>
+                  <li>
+                    안입은듯한 누디시리즈.<br>가볍고, 편안하게.
+                  </li>
+                </ul>
             </div>
-            <div class="right">
-              <img src="images/pick02.png" alt="">
-                      <ul class="detail">
-                        <li>누디소프트 레깅스</li>
-                        <li>
-                          <p class="per">42%<span> 45,000원</span></p>
-                          <p class="disc">78,000원</p>
-                        </li>
-                      </ul>
-                  </ul>
+            <div class="pick_r">
+              <div class="right">
+                <img src="images/pick03.png" alt="">
+                        <ul class="detail">
+                          <li>누디라인 브라탑</li>
+                          <li>
+                            <p class="per">42%<span> 45,000원</span></p>
+                            <p class="disc">78,000원</p>
+                          </li>
+                        </ul>
+                    </ul>
+              </div>
+              <div class="right">
+                <img src="images/pick02.png" alt="">
+                        <ul class="detail">
+                          <li>누디소프트 레깅스</li>
+                          <li>
+                            <p class="per">42%<span> 45,000원</span></p>
+                            <p class="disc">78,000원</p>
+                          </li>
+                        </ul>
+                    </ul>
+              </div>
+  
             </div>
-
           </div>
         </div>
 
@@ -428,48 +433,50 @@
     <div id="hottime">
       <h1>HOT time<p> 실시간 인기있는 상품이에요</p></h1>
           <div class="hot">
-            <div class="right">
-              <img src="images/hot_001.jpg" alt="">
-                      <ul class="detail">
-                        <li>쿨링 업 와이드 팬츠</li>
-                        <li>
-                          <p class="per">42%<span> 45,000원</span></p>
-                          <p class="disc">78,000원</p>
-                        </li>
-                        <li>
-                          <p class="c_btn">HOT</p>
-                        </li>
-                      </ul>
-            </div>
-            <div class="right">
-              <img src="images/hot_002.jpg" alt="">
-                      <ul class="detail">
-                        <li>홀리데이 숏 슬리브</li>
-                        <li>
-                          <p class="per">42%<span> 45,000원</span></p>
-                          <p class="disc">78,000원</p>
-                        </li>
-                        <li>
-                          <p class="c_btn">HOT</p>
-                        </li>
-                      </ul>
-            </div>
-            <div class="right">
-              <img src="images/hot_003.jpg" alt="">
-                      <ul class="detail">
-                        <li>에어터치 스키니 레깅스</li>
-                        <li>
-                          <p class="per">42%<span> 45,000원</span></p>
-                          <p class="disc">78,000원</p>
-                        </li>
-                        <li>
-                          <p class="c_btn">추천</p>
-                          <p class="c_btn">반짝타임딜</p>
-                          <p class="c_btn">HOT</p>
-                        </li>
-                        
-                      </ul>
-                  
+            <div class="container">
+              <div class="right">
+                <img src="images/hot_001.jpg" alt="">
+                        <ul class="detail">
+                          <li>쿨링 업 와이드 팬츠</li>
+                          <li>
+                            <p class="per">42%<span> 45,000원</span></p>
+                            <p class="disc">78,000원</p>
+                          </li>
+                          <li>
+                            <p class="c_btn">HOT</p>
+                          </li>
+                        </ul>
+              </div>
+              <div class="right">
+                <img src="images/hot_002.jpg" alt="">
+                        <ul class="detail">
+                          <li>홀리데이 숏 슬리브</li>
+                          <li>
+                            <p class="per">42%<span> 45,000원</span></p>
+                            <p class="disc">78,000원</p>
+                          </li>
+                          <li>
+                            <p class="c_btn">HOT</p>
+                          </li>
+                        </ul>
+              </div>
+              <div class="right">
+                <img src="images/hot_003.jpg" alt="">
+                        <ul class="detail">
+                          <li>에어터치 스키니 레깅스</li>
+                          <li>
+                            <p class="per">42%<span> 45,000원</span></p>
+                            <p class="disc">78,000원</p>
+                          </li>
+                          <li>
+                            <p class="c_btn">추천</p>
+                            <p class="c_btn">반짝타임딜</p>
+                            <p class="c_btn">HOT</p>
+                          </li>
+                          
+                        </ul>
+                    
+              </div>
             </div>
           </div>
     </div>
@@ -477,39 +484,26 @@
     <div id="review">
       <h1>REVIEW</h1>
     </div>
-<!--07_sns-->    
-
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/sns_001.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/sns_005.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item2.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item3.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
-    <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/sns_001.jpg" alt=""></a></div>
-  </div>
-  <div class="swiper-scrollbar"></div>
-</div>
-
-
-
-
-
+<!--07_sns-->
     <div id="sns">
       <h1>Instagram
         <p>@janecourtkorea</p>
       </h1>
-      <div class="insta">
-        <a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/sns_001.jpg" alt=""></a>
-        <a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/sns_005.jpg" alt=""></a>
-        <a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item2.jpg" alt=""></a>
-        <a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item3.jpg" alt=""></a>
-        <a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a>
+      <div class="swiper snsswiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/sns_001.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/sns_005.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item2.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item3.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/item4.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="https://www.instagram.com/janecourtkorea/" target="_blank"><img src="./images/sns_001.jpg" alt=""></a></div>
+        </div>
       </div>
+      <div class="swiper-scrollbar"></div>
     </div>
 <!--08_brand-->       
     <div id="brand">
@@ -520,7 +514,7 @@
         <p><img src="./images/main_logo.svg" alt=""><span>더 알아보기</span></p>
       </div>
     </div>
-    </main>
+</main>
 <footer>
   <div class="footer_inner">
     <div class="inner_t">

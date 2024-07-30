@@ -1,47 +1,16 @@
-.swiper-container{
-  position: relative;
-  left: 0;
-  top:0;
-  z-index: 999;
-  width: 100%;
+/* 메인 1. swiper */
+main .maintop {
+  width: 100%; min-width:1440px;
 }
-  .swiper-slide{
-    display:block;
-    background-size:cover;
+/* 메인 2. sns review swiper */
+main .snsswiper{
+  width: 1440px;
+  margin: 0 auto;
 }
-
-
-.mySwiper{
-  display: flex;
-  justify-content: space-around;
-  margin: 0 200px;
-  flex-wrap: nowrap;
-}
-
-.swiper{
+main .snsswiper .swiper-slide img {
   width: 100%;
   height: 100%;
 }
-
-.swiper-wrapper{
-  position: relative;
-  left: 0;
-  top:0;
-  z-index: 999;
-  width: 100%;
-}
-
-.swiper-slide {
-  width: 100%;
-  display: flex;
-  display:block;
-  background-size:cover;
-  margin: 0 200px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+main #sns .swiper-scrollbar {
+  transform:translateY(60px)
 }

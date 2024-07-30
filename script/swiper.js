@@ -1,7 +1,7 @@
-var mySwiper = new Swiper('.swiper-container', {
+var maintop = new Swiper('.maintop', {
   slidesPerView:3,
   slidesPerGroup:3,
-  autoplay:{delay:3000},
+  autoplay:{delay:2000},
   loop:true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -9,13 +9,12 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 });
 
-var swiper = new Swiper(".mySwiper", {
-  
-  slidesPerView:6,
-  slidesPerGroup:2,
+var snsswiper = new Swiper(".snsswiper", {
+  slidesPerView:5,
+  spaceBetween:10,
+  slidesPerGroup:5,
   autoplay:{delay:2000},
   scrollbar: {
-  loop:true,
-  el: ".swiper-scrollbar",
+    el: "#sns .swiper-scrollbar",
   },
 });

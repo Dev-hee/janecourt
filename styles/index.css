@@ -1,5 +1,5 @@
 * {font-family:"Pretendard", "Noto Sans KR", "Noto Serif"; }
-body > * {min-width:1920px}
+/* body > * {min-width:1920px} */
 html,body {
     margin:0;
 }
@@ -8,12 +8,14 @@ header {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border-bottom: 1px solid #D9D9D9;
+    min-width:1440px; margin:0 auto;
 }
 header .top{
     display: flex;
     justify-content:center;
     background-color: #BE3038;
-    padding: 12px 0px;}
+    padding: 12px 0px;
+}
 header .top h1{
     color: #ffffff;
     font-weight: 700;
@@ -21,16 +23,18 @@ header .top h1{
 header .top p{color: #ffffff;}
 header .top p span{color: #ffffff; margin: 10px;}
 /* header nav */
-header nav{
+header nav {
     padding: 0 16px;
     display: flex;
     height: 100px;
-    align-items: center;}
-header nav h1{width: 140px;}
-header nav h1 a{}
-header nav h1 a img{width: 100%;}
-header nav .gnb{
-    width: 1920px;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .left {display: flex; align-items: center;}
+header nav h1 {width: 140px;}
+header nav h1 a {}
+header nav h1 a img {width: 100%;}
+header nav .gnb {
     display: flex;
     flex-wrap: nowrap;
     justify-content:space-between;
@@ -116,7 +120,8 @@ main .item3 h2{
         font-weight: 500;
         letter-spacing: -2px;
         color: #ffffff;
-        margin: 346px auto;
+        width: 1440px;
+        margin: 0px auto;
         justify-content: center;
 }
 main .item3 h2 p{
@@ -126,8 +131,8 @@ main .item3 h2 p{
         color: #ffffff;
 }
 main #filter{    
-    margin: 200px 0 30px;  
-    padding: 0 240px;  
+    width: 1440px;
+    margin: 200px auto 0;
 }
 main #filter h1{
     font-family:"Noto Serif";
@@ -170,7 +175,9 @@ main #filter .filter ul:nth-child(1) li{
 }
 main #filter .filter ul:nth-child(2){      
     display: flex;
-    flex-wrap: nowrap;}
+    flex-wrap: nowrap;
+    margin-right: 90px;
+}
     
 main #filter .filter ul:nth-child(2) li{      
     padding: 20px;}
@@ -188,10 +195,11 @@ main .big{
     justify-content:space-between;
     }
 main #new{
-    margin: 0 240px;
+    width:1440px;
+    margin: 0 auto;
     display:flex;
     justify-content:space-between;
-    }  
+}  
 main #new .right_t {
     width:1006px;
     display:flex;
@@ -256,17 +264,22 @@ main #pick h1{
     font-family:"Noto Serif";
     font-size: 2.25rem;
     display: flex;
-    margin: 0 200px 30px;
+    width: 1440px;
+    margin:0 auto 30px;
     justify-content: space-between;
     flex-direction: row;
 }
 /*pick 왼쪽*/
 main #pick .pick_l{
     background-color:#EBEAEA;
+    padding: 50px 0;
+}
+/* pick container */
+main #pick .pick_l .container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    padding: 50px;
+    width:1440px; margin:0 auto;
 }
 main #pick .pick_l .right{
     display: flex;
@@ -323,10 +336,12 @@ main #pick .pick_r .right .detail li .disc{
 font-size: 0.75rem}
 
 main #best{
-    margin: 0 200px;
+    width: 1440px;
+    margin: 200px auto;
 }
 main #best h1{
-    margin: 200px 0 30px;
+    width: 1440px;
+    margin: 0 auto 30px;
     font-family:"Noto Serif";
     font-size: 2.25rem;
     display: flex;
@@ -339,7 +354,6 @@ main #best .big{
     align-items: center;
 }
 main #best .big .right_t{
-    margin: 0 90px;
 }
 main #best .big .right_t img{}
 main #best .big .right_t .right{
@@ -428,10 +442,11 @@ main #best .big .right_t .right li .disc {
     text-decoration: line-through;}
 
 main #set{
-    margin: 0 200px;
+    width: 1440px;
+    margin: 0 auto;
     }  
-main #set h1{        
-    margin: 200px 0 30px;
+main #set h1{       
+    margin: 0 auto 30px;
     font-family: "Noto Serif";
     font-size: 2.25rem;
     display: flex;
@@ -546,7 +561,8 @@ main #hottime h1{
     font-family: "Noto Serif";
     font-size: 2.25rem;
     display: flex;
-    margin: 0 200px 30px;
+    width:1440px;
+    margin: 0 auto 30px;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -559,10 +575,13 @@ main #hottime h1 p{
 }
 main #hottime .hot{
     background-color: #EBEAEA;
+    padding:30px 0;
+}
+main #hottime .hot .container {
     display: flex;
     flex-wrap: nowrap;
-    padding:30px 200px;
     justify-content: space-between;
+    width:1440px; margin:0 auto;
 }
 main #hottime .right{}
 main #hottime .hot .detail {
@@ -628,7 +647,8 @@ main #review h1{
     font-family: "Noto Serif";
     font-size: 2.25rem;
     display: flex;
-    margin: 0 200px 30px;
+    width:1440px;
+    margin: 0 auto 30px;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -639,12 +659,14 @@ main #sns{
     display: flex;
     margin-top: 200px;
     flex-direction: column;
+    position:relative;
 }
 main #sns h1{
     font-family: "Noto Serif";
     font-size: 2.25rem;
     display: flex;
-    margin: 0 200px 30px;
+    width: 1440px;
+    margin: 0 auto 30px;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
@@ -664,7 +686,8 @@ main #sns .insta
     flex-wrap: nowrap;
 }
 main #brand {}
-main #brand h2{ 
+main #brand h2{
+    width:100%; min-width:1440px;
     margin-top:200px;
     align-items: center; 
     display: flex;
@@ -674,6 +697,7 @@ main #brand h2{
     font-size: 0.875rem;
 }
 main #brand .bg{
+    width:100%; min-width:1440px;
     display: flex;
     background-image: url(../images/story_bg.jpg);
     background-repeat: no-repeat;
@@ -710,7 +734,10 @@ main #brand .bg p span{
     color:#ffffff;
     font-size: 1rem;}
 
-footer{background: #BE3038;}
+footer{
+    width:100%; min-width:1440px;
+    background: #BE3038;
+}
 footer .footer_inner{
     margin: 0 240px;
     color: #ffffff;
